@@ -12,7 +12,32 @@
 		AA1DBFF820D31361005D26AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1DBFF620D31361005D26AA /* Main.storyboard */; };
 		AA1DBFFA20D31364005D26AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA1DBFF920D31364005D26AA /* Assets.xcassets */; };
 		AA1DBFFD20D31364005D26AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA1DBFFB20D31364005D26AA /* LaunchScreen.storyboard */; };
+		AA49AB0B20D81B4500A7CD82 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA49AB0A20D81B4500A7CD82 /* SpeechToTextV1.framework */; };
+		AA49AB0D20D81B4A00A7CD82 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA49AB0C20D81B4A00A7CD82 /* Starscream.framework */; };
+		AA49AB0F20D81B5A00A7CD82 /* ToneAnalyzerV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA49AB0E20D81B5A00A7CD82 /* ToneAnalyzerV3.framework */; };
+		AA49AB1020D8286900A7CD82 /* SpeechToTextV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA49AB0A20D81B4500A7CD82 /* SpeechToTextV1.framework */; };
+		AA49AB1120D8286900A7CD82 /* SpeechToTextV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA49AB0A20D81B4500A7CD82 /* SpeechToTextV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA49AB1320D8288A00A7CD82 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA49AB0C20D81B4A00A7CD82 /* Starscream.framework */; };
+		AA49AB1420D8288A00A7CD82 /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA49AB0C20D81B4A00A7CD82 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA49AB1520D8288E00A7CD82 /* ToneAnalyzerV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA49AB0E20D81B5A00A7CD82 /* ToneAnalyzerV3.framework */; };
+		AA49AB1620D8288E00A7CD82 /* ToneAnalyzerV3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA49AB0E20D81B5A00A7CD82 /* ToneAnalyzerV3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA49AB1220D8286900A7CD82 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AA49AB1620D8288E00A7CD82 /* ToneAnalyzerV3.framework in Embed Frameworks */,
+				AA49AB1120D8286900A7CD82 /* SpeechToTextV1.framework in Embed Frameworks */,
+				AA49AB1420D8288A00A7CD82 /* Starscream.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AA1DBFEF20D31361005D26AA /* Blog Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Blog Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +47,9 @@
 		AA1DBFF920D31364005D26AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA1DBFFC20D31364005D26AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA1DBFFE20D31364005D26AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA49AB0A20D81B4500A7CD82 /* SpeechToTextV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechToTextV1.framework; path = Carthage/Build/iOS/SpeechToTextV1.framework; sourceTree = "<group>"; };
+		AA49AB0C20D81B4A00A7CD82 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = Carthage/Build/iOS/Starscream.framework; sourceTree = "<group>"; };
+		AA49AB0E20D81B5A00A7CD82 /* ToneAnalyzerV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToneAnalyzerV3.framework; path = Carthage/Build/iOS/ToneAnalyzerV3.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +57,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA49AB0B20D81B4500A7CD82 /* SpeechToTextV1.framework in Frameworks */,
+				AA49AB0D20D81B4A00A7CD82 /* Starscream.framework in Frameworks */,
+				AA49AB0F20D81B5A00A7CD82 /* ToneAnalyzerV3.framework in Frameworks */,
+				AA49AB1520D8288E00A7CD82 /* ToneAnalyzerV3.framework in Frameworks */,
+				AA49AB1320D8288A00A7CD82 /* Starscream.framework in Frameworks */,
+				AA49AB1020D8286900A7CD82 /* SpeechToTextV1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +74,7 @@
 			children = (
 				AA1DBFF120D31361005D26AA /* Blog Project */,
 				AA1DBFF020D31361005D26AA /* Products */,
+				AA49AB0920D81B4500A7CD82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +99,16 @@
 			path = "Blog Project";
 			sourceTree = "<group>";
 		};
+		AA49AB0920D81B4500A7CD82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA49AB0E20D81B5A00A7CD82 /* ToneAnalyzerV3.framework */,
+				AA49AB0C20D81B4A00A7CD82 /* Starscream.framework */,
+				AA49AB0A20D81B4500A7CD82 /* SpeechToTextV1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +119,7 @@
 				AA1DBFEB20D31361005D26AA /* Sources */,
 				AA1DBFEC20D31361005D26AA /* Frameworks */,
 				AA1DBFED20D31361005D26AA /* Resources */,
+				AA49AB1220D8286900A7CD82 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -281,6 +327,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Blog Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,6 +348,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Blog Project/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
